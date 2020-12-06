@@ -5,8 +5,9 @@ function buttonClick() {
 	const numberOfPage = Number(document.getElementById('numberOfPage').value);
 	const limit = Number(document.getElementById('limit').value);
 
-	const numberInRange = numberOfPage < 10 || numberOfPage >= 1;
-	const limitInRange = limit < 10 || limit >= 1;
+	// В numberInRange и limitInRange неправильно прописано условие. В данном случае должно использоваться логическое И вместо ИЛИ, т.к. нам нужно, чтобы одновременно соблюдались оба условия: значение должно быть больше 1 И меньше 10
+	const numberInRange = numberOfPage < 10 && numberOfPage >= 1;
+	const limitInRange = limit < 10 && limit >= 1;
 
 	if (!numberInRange && !limitInRange) {
 		resultDiv.innerHTML = 'Номер страницы и лимит вне диапазона от 1 до 10';

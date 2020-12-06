@@ -101,3 +101,4 @@ console.log(JSON.stringify(xmlToJsonWithLib(xmlString)));
 console.log(JSON.stringify(xmlToJsonWithBrowser(xmlString)));
 
 
+// Сторонние библиотеки старайтесь пока что не использовать, т.к. в целях обучения будет лучше, если вы сначала научитесь решать задачи самостоятельно, т.е. с помощью стандартных инструментов. Вариант с xmlToJsonWithBrowser засчитала, всё сделано верно.
